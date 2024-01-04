@@ -1,0 +1,259 @@
+:root {
+  /* Primary */
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+  /* Gradients  */
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 89%);
+  --Light-lavender: hsl(241, 72%, 46%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+  /* Other */
+  --Light-blue-transparent: hsla(240, 53%, 50%, 0.2);
+  --Light-gray-transparent: hsla(0, 3.31%, 52.55%, 0.84);
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+main {
+  display: inherit;
+  width: 40rem;
+  margin-bottom: 1rem;
+}
+.flex-vertical-item-align {
+  display: flex;
+  align-items: center;
+}
+.flex-column-center {
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+section {
+  width: 55rem;
+  padding: 35px 50px 50px;
+  border-radius: 30px;
+  transform: translateX(25px);
+  margin-left: -25px;
+  text-align: center;
+  background-image: linear-gradient(
+    var(--Light-slate-blue),
+    var(--Light-royal-blue)
+  );
+  gap: 0.8rem;
+  color: var(--White);
+}
+section h2 {
+  font-size: 1.7rem;
+}
+.circle-text {
+  width: 180px;
+  height: 180px;
+  margin: 0.6rem 0 0.5rem 0;
+  font-size: 4rem;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    var(--Violet-blue),
+    var(--Persian-blue)
+  );
+  font-weight: 700;
+}
+.circle-text span {
+  font-size: 0.9rem;
+  opacity: 0.3;
+}
+.test-score-comparison-text,
+h1 {
+  opacity: 0.6;
+}
+.test-score-comparison-text {
+  font-size: 1rem;
+}
+h1 {
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+}
+aside {
+  width: 56.5625rem;
+  padding: 35px 30px 30px 60px;
+  border-radius: 0 30px 30px 0;
+  box-shadow: 10px 15px 20px var(--Light-blue-transparent);
+  font-weight: 700;
+}
+aside h2 {
+  font-size: 1.3rem;
+  padding-bottom: 30px;
+}
+aside ul li {
+  max-width: 20.75rem;
+  border-radius: 5px;
+  padding: 12px 10px 12px 10px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+aside ul li img {
+  padding-right: 5px;
+}
+.li-content {
+  display: flex;
+  justify-content: space-between;
+}
+/* Corners for summary list elements - Start */
+.corner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+.top-right {
+  top: 0;
+  right: 0;
+  border-radius: 0 5px 0 0;
+  border-top: 2px solid #e6e6ec;
+  border-right: 2px solid #e6e6ec;
+}
+.top-left {
+  top: 0;
+  left: 0;
+  border-radius: 5px 0 0 0;
+  border-top: 2px solid #e6e6ec;
+  border-left: 2px solid #e6e6ec;
+}
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-radius: 0 0 5px 0;
+  border-bottom: 2px solid #e6e6ec;
+  border-right: 2px solid #e6e6ec;
+}
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 0 5px;
+  border-bottom: 2px solid #e6e6ec;
+  border-left: 2px solid #e6e6ec;
+}
+/* Corners for summary list elements - End */
+/* All summary related html portion is in the js.script, with the exception of the ul element */
+/* Summary - Start */
+.summary-list {
+  list-style-type: none;
+}
+.summary-text {
+  display: inherit;
+}
+.summary-score-color {
+  color: var(--Dark-gray-blue);
+}
+.summary-score-color::after {
+  content: "/ 100";
+  color: var(--Light-gray-transparent);
+}
+.summary-list li:nth-child(1) {
+  color: var(--Light-red);
+  background-color: hsla(0, 100%, 67%, 5%);
+}
+.summary-list li:nth-child(2) {
+  color: var(--Orangey-yellow);
+  background-color: hsl(39, 100%, 56%, 5%);
+}
+.summary-list li:nth-child(3) {
+  color: var(--Green-teal);
+  background-color: hsla(166, 100%, 37%, 5%);
+}
+.summary-list li:nth-child(4) {
+  color: var(--Cobalt-blue);
+  background-color: hsla(234, 85%, 45%, 5%);
+}
+/* Summary - End */
+aside button {
+  border-radius: 20px;
+  color: var(--White);
+  background-color: var(--Dark-gray-blue);
+  border: none;
+  margin-top: 25px;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: inherit;
+  font-size: 0.8rem;
+}
+aside button:hover {
+  background: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue),
+    var(--Light-royal-blue)
+  );
+}
+.attribution {
+  font-size: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 700px) {
+  body {
+    justify-content: flex-start;
+  }
+  main {
+    flex-direction: column;
+  }
+  main,
+  section,
+  aside {
+    width: 100%;
+  }
+  section {
+    border-radius: 0 0 30px 30px;
+    transform: translateY(25px);
+    margin: -25px 0 0 0;
+    padding-bottom: 30px;
+  }
+  .circle-text span {
+    font-size: 1.1rem;
+  }
+  section h2 {
+    font-size: 2rem;
+  }
+  .test-score-comparison-text {
+    font-size: clamp(0.7rem, 0.75rem + 0.9vw, 1.1rem);
+  }
+  aside {
+    padding: 30px;
+    border-radius: 30px 30px;
+  }
+  aside h2 {
+    padding-top: 15px;
+  }
+  aside ul li {
+    max-width: 100%;
+  }
+  aside button {
+    font-size: 1rem;
+  }
+  .attribution {
+    font-size: clamp(0.7rem, 0.4rem + 1.8vw, 1.1rem);
+  }
+}
