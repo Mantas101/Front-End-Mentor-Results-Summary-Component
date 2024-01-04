@@ -49,7 +49,7 @@ main {
   align-items: center;
 }
 .flex-column-center {
-  flex-flow: column nowrap;
+  flex-direction: column;
   justify-content: center;
 }
 section {
