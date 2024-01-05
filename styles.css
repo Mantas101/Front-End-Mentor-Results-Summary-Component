@@ -101,7 +101,7 @@ aside {
   width: 56.5625rem;
   padding: 35px 30px 30px 60px;
   border-radius: 0 30px 30px 0;
-  box-shadow: 10px 15px 20px var(--Light-blue-transparent);
+  box-shadow: 0 30px 60px 0 var(--Light-blue-transparent);
   font-weight: 700;
 }
 aside h2 {
