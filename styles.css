@@ -15,7 +15,7 @@
   --Light-lavender: hsl(241, 72%, 46%);
   --Dark-gray-blue: hsl(224, 30%, 27%);
   /* Other */
-  --Light-blue-transparent: hsla(240, 53%, 50%, 0.2);
+  --Light-blue-transparent: hsla(223.89, 82.16%, 58.24%, 0.15);
   --Light-gray-transparent: hsla(0, 3.31%, 52.55%, 0.84);
 }
 *,
@@ -43,6 +43,7 @@ main {
   display: inherit;
   width: 40rem;
   margin-bottom: 1rem;
+  box-shadow: 0 30px 60px 0 var(--Light-blue-transparent);
 }
 .flex-vertical-item-align {
   display: flex;
@@ -101,7 +102,6 @@ aside {
   width: 56.5625rem;
   padding: 35px 30px 30px 60px;
   border-radius: 0 30px 30px 0;
-  box-shadow: 0 30px 60px 0 var(--Light-blue-transparent);
   font-weight: 700;
 }
 aside h2 {
